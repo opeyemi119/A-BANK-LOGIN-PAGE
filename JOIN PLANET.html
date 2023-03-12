@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="dba-banner.jpg">
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Welcome back </h3>
+                <p> <b> Digitize your finanacial</b> <br> putting you in control of your spending</p>
+                
+        </div>
+    </section>
+
+    <div class="hero">
+        
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">log in</button>
+          <button type="button" class="toggle-btn" onclick="signup()">sign up</button>
+        </div>
+        <div class="social-icons">
+          <img src="tw.png">
+          <img src="fb.png">
+          <img src="gp.png">
+        </div>
+              <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="user name" required>
+                <input type="text" class="input-field" placeholder="enter password" required>
+                <input type="checkbox" class="check-box"><span>forgotten your password ?</span>
+                <button type="submit" class="submit-btn">Log in</button>
+              </form>
+              <form id="sign up" class="input-group">
+                <input type="text" class="input-field" placeholder="user name" required>
+                <input type="email" class="input-field" placeholder="email " required>
+                <input type="text" class="input-field" placeholder="enter password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">sign up</button>
+              </form>
+        </div>
+         
+            </div>
+  
+            <script>
+              var x = document.getElementById("login");
+              var y = document.getElementById("sign up");
+              var z = document.getElementById("btn");
+  
+              function signup(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+  
+  
+            </script>
+      
+  </body>
+  </html>
